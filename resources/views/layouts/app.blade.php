@@ -25,9 +25,9 @@
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center space-x-3">
                 <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-emerald-800/80 text-emerald-200 border border-emerald-700">
-                    <i class="fa-solid fa-graduation-cap mr-1.5 text-amber-400"></i> LKPD Praktik RPL
+                    <i class="fa-solid fa-graduation-cap mr-1.5 text-amber-400"></i> Qur'an Pesat
                 </span>
-                <span>Proyek Website Islami • Integrasi API eQuran.id dengan Laravel</span>
+                <span>Website Islami</span>
             </div>
             <div class="flex items-center space-x-4 text-emerald-300/80">
                 <span id="currentDateDisplay"><i class="fa-regular fa-calendar-days mr-1.5 text-emerald-400"></i> Memuat tanggal...</span>
@@ -49,7 +49,7 @@
                     <div>
                         <div class="flex items-center space-x-1.5">
                             <span class="text-2xl font-bold tracking-tight text-emerald-950 font-serif">Nurul Qur'an</span>
-                            <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 font-semibold border border-amber-300">API</span>
+                            
                         </div>
                         <p class="text-xs text-slate-500 font-medium tracking-wide">Portal Al-Qur'an, Doa & Sholat</p>
                     </div>
@@ -79,26 +79,9 @@
 
                     <div class="h-6 w-px bg-slate-200 mx-2"></div>
 
-                    <a href="{{ route('laporan') }}" 
-                       class="inline-flex items-center px-3.5 py-2 rounded-lg text-xs font-bold transition-all duration-200 {{ request()->routeIs('laporan') ? 'bg-amber-600 text-white shadow-xs' : 'bg-amber-50 text-amber-900 border border-amber-300/80 hover:bg-amber-100' }}">
-                        <i class="fa-solid fa-file-lines mr-1.5 text-amber-500 {{ request()->routeIs('laporan') ? 'text-white' : '' }}"></i> Laporan LKPD
-                    </a>
+                    
 
-                    <!-- Dropdown Latihan API Lainnya -->
-                    <div class="relative group ml-1">
-                        <button type="button" class="px-2.5 py-2 rounded-lg text-xs font-semibold text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition flex items-center">
-                            <span>Latihan API Lain</span>
-                            <i class="fa-solid fa-chevron-down text-[9px] ml-1.5"></i>
-                        </button>
-                        <div class="absolute right-0 mt-1 w-40 bg-white rounded-xl shadow-lg border border-slate-200 py-1.5 hidden group-hover:block z-50">
-                            <a href="{{ route('quotes') }}" class="flex items-center px-3.5 py-2 text-xs text-slate-700 hover:bg-emerald-50 hover:text-emerald-800 font-medium">
-                                <i class="fa-solid fa-quote-left mr-2 text-slate-400"></i> Dummy Quotes
-                            </a>
-                            <a href="{{ route('roblox') }}" class="flex items-center px-3.5 py-2 text-xs text-slate-700 hover:bg-emerald-50 hover:text-emerald-800 font-medium">
-                                <i class="fa-solid fa-gamepad mr-2 text-slate-400"></i> Roblox API
-                            </a>
-                        </div>
-                    </div>
+                    
                 </nav>
 
                 <!-- Mobile Menu Button -->
@@ -216,14 +199,7 @@
                     <p class="text-emerald-100/70 text-sm leading-relaxed max-w-md">
                         Aplikasi web islami komprehensif yang mengintegrasikan layanan resmi <strong>eQuran.id API v2</strong>. Dirancang secara profesional, mudah digunakan, cepat, dan sarat faedah bagi umat Islam untuk tilawah, tadabbur, berdoa, dan menjaga waktu shalat.
                     </p>
-                    <div class="flex items-center space-x-3 text-xs text-emerald-300/80 pt-2">
-                        <span class="inline-flex items-center px-2.5 py-1 rounded-full bg-emerald-900/80 border border-emerald-700/60">
-                            <i class="fa-solid fa-code mr-1.5 text-amber-400"></i> Laravel 12 + Tailwind CSS
-                        </span>
-                        <span class="inline-flex items-center px-2.5 py-1 rounded-full bg-emerald-900/80 border border-emerald-700/60">
-                            <i class="fa-solid fa-cloud mr-1.5 text-emerald-400"></i> API eQuran.id
-                        </span>
-                    </div>
+                    
                 </div>
 
                 <!-- Col 2: Layanan Fitur -->
@@ -253,16 +229,8 @@
                     </ul>
                 </div>
 
-                <!-- Col 3: Ketentuan LKPD & Sekolah -->
-                <div class="space-y-3">
-                    <h5 class="text-sm font-semibold uppercase tracking-wider text-amber-400">Lembar Kerja (LKPD)</h5>
-                    <p class="text-xs text-emerald-100/70 leading-relaxed">
-                        Tugas Praktik Individu Kejuruan Rekayasa Perangkat Lunak (RPL). Dilengkapi dokumentasi arsitektur request, error handling, dan jawaban 3 pertanyaan laporan.
-                    </p>
-                    <a href="{{ route('laporan') }}" class="inline-flex items-center text-xs font-semibold text-amber-400 hover:text-amber-300 transition pt-1">
-                        Lihat Laporan & Jawaban LKPD <i class="fa-solid fa-arrow-right ml-1.5"></i>
-                    </a>
-                </div>
+             
+                
             </div>
 
             <!-- Bottom Subfooter -->

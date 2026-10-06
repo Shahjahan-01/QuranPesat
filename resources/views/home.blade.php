@@ -138,7 +138,7 @@
             Tiga Layanan Lengkap eQuran.id
         </h2>
         <p class="text-sm sm:text-base text-slate-600 mt-2">
-            Mengintegrasikan seluruh fitur inti yang disyaratkan dalam Lembar Kerja Peserta Didik (LKPD) menjadi sarana ibadah digital yang bermakna.
+            Mengintegrasikan seluruh fitur inti yang menjadi sarana ibadah digital yang bermakna.
         </p>
     </div>
 
@@ -317,10 +317,10 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         @foreach($doaPilihan as $doa)
-        <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-xs hover:border-amber-400 transition-all flex flex-col justify-between">
-            <div class="space-y-4">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200">
+        <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-xs hover:border-amber-400 transition-all flex flex-col justify-between" >
+            <div class="space-y-4" >
+                <div class="flex items-center justify-between" >
+                    <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200" >
                         {{ $doa['grup'] ?? 'Doa Harian' }}
                     </span>
                     <a href="{{ route('doa.show', $doa['id']) }}" class="text-xs text-slate-400 hover:text-amber-700" title="Buka Detail">
@@ -357,32 +357,6 @@
     </div>
 </section>
 
-<!-- Banner LKPD & Kepatuhan Proyek -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-    <div class="bg-gradient-to-r from-emerald-900 via-teal-900 to-emerald-950 rounded-3xl p-8 sm:p-10 text-white shadow-xl relative overflow-hidden border border-emerald-700/50">
-        <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl">
-            <i class="fa-solid fa-graduation-cap"></i>
-        </div>
-        <div class="relative z-10 max-w-3xl space-y-4">
-            <div class="inline-flex items-center space-x-2 bg-amber-400 text-slate-950 px-3 py-1 rounded-full text-xs font-bold">
-                <i class="fa-solid fa-file-signature"></i>
-                <span>LEMBAR KERJA PESERTA DIDIK (LKPD)</span>
-            </div>
-            <h3 class="text-2xl sm:text-3xl font-extrabold font-serif text-white">
-                Integrasi API eQuran.id dengan Laravel
-            </h3>
-            <p class="text-sm sm:text-base text-emerald-100/80 leading-relaxed">
-                Proyek ini telah mengimplementasikan <strong>seluruh 3 layanan</strong> (Al-Qur'an lengkap audio & tafsir, Doa Harian, dan Jadwal Sholat) melalui request Laravel Controller, cache otomatis, desain islami yang humanis dan elegan, serta penanganan error menyeluruh.
-            </p>
-            <div class="pt-2 flex flex-wrap gap-3">
-                <a href="{{ route('laporan') }}" class="px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs uppercase tracking-wider transition shadow-md">
-                    Buka Halaman Laporan & LKPD <i class="fa-solid fa-arrow-right ml-1.5"></i>
-                </a>
-                <a href="{{ route('quran.index') }}" class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-xs transition border border-white/20">
-                    Mulai Eksplorasi Fitur
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+
+
 @endsection
