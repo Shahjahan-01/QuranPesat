@@ -111,9 +111,7 @@
             <a href="{{ route('sholat.index') }}" class="flex items-center px-4 py-2.5 rounded-xl text-sm font-semibold {{ request()->routeIs('sholat.*') ? 'bg-emerald-800 text-white' : 'text-slate-700 hover:bg-slate-100' }}">
                 <i class="fa-solid fa-clock w-6 text-center mr-2"></i> Jadwal Sholat
             </a>
-            <a href="{{ route('laporan') }}" class="flex items-center px-4 py-2.5 rounded-xl text-sm font-semibold bg-amber-50 text-amber-900 border border-amber-200">
-                <i class="fa-solid fa-file-lines w-6 text-center mr-2 text-amber-600"></i> Lembar Kerja Siswa (LKPD)
-            </a>
+            
         </div>
     </header>
 
